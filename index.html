@@ -84,8 +84,8 @@ function shuffled(n, salt) {           // vary answer order so position doesn't 
 function intro() {
   $("#app").innerHTML = `
     <header><div class="brand">HUNGE<span>GAEMS</span></div></header>
-    <h1>Who are you in the arena?</h1>
-    <p class="muted">Alright, we've got ${D.quiz.questions.length} little scenarios for you. Pick whatever you'd actually do in each situation. Don't think too hard about it. It's for funsies.</p>
+    <h1>Who in the hell are you in the arena?</h1>
+    <p class="muted">Alright, we've got ${D.quiz.questions.length} scenarios for you. Pick whatever you'd actually do in each situation. Don't think too hard about it. It's for funsies.</p>
     <label>Your name <input id="qName" value="${esc(st.name)}" autocomplete="off"></label>
     <div class="row">
       <label>Pronouns <select id="qPron"><option value="">prefer not to say</option>${Object.entries(PRON).map(([k, v]) => `<option value="${k}" ${st.pronoun === k ? "selected" : ""}>${v}</option>`).join("")}</select></label>
